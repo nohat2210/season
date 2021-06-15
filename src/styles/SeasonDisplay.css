@@ -1,0 +1,55 @@
+.icon-left {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.icon-right {
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.season-display.winter i {
+    color: blue;
+}
+.season-display.summer i {
+    color: red;
+}
+
+.season-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.winter{
+    background-color: aliceblue;
+}
+
+.summer{
+    background-color: orange;
+}
